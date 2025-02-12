@@ -1,16 +1,16 @@
-import Icon from '../assets/icon.webp'
 import Media from './Media'
 
-function Card(){
+function Card({user}){
+
     return (
         <div className="card flex flex-col w-100 bg-gray-300 text-black">
-            <img className="card-img w-90 h-auto rounded-2xl self-center" src={Icon} alt="Icon" />
+            <img className="card-img w-90 h-auto rounded-2xl self-center" src={user.icon}/>
             <div className="card-text text-left py-6">
-                <h2 className="name text-3xl font-medium">Gary Do</h2>
-                <p className="mail text-emerald-600 text-2xl font-normal">gary.do@but1.mmi</p>
-                <p className="description text-2xl font-normal">Lorem ipsum dolor sit amien. Lorem Ipsum dolor sit amien.</p>
+                <h2 className="name text-3xl font-medium">{user.name}</h2>
+                <p className="mail text-emerald-600 text-2xl font-normal">{user.mail}</p>
+                <p className="description text-2xl font-normal">{user.description}</p>
             </div>
-            <Media />
+            <Media media={user.medias}/>
         </div>
     )
 }
