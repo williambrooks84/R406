@@ -34,8 +34,4 @@ npm run build
 ```
 Cette commande génère les fichiers optimisés pour un déploiement sur un serveur.  
 
-### 5. Prévisualisation de la production  
-```bash
-npm run preview
-```
 Cela permet de tester localement le build de production.  
