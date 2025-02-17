@@ -11,15 +11,15 @@ Ce dépôt contient toutes mes applications **React.js** créées avec **Vite** 
 
 ## Installation et Exécution  
 
-### 1. Cloner le projet  
+### 1. Cloner le projet 
 ```bash
-git clone https://github.com/ton-utilisateur/nom-du-repo.git
-cd nom-du-repo
+git clone https://github.com/williambrooks84/R406.git
 ```
 
 ### 2. Installation des dépendances  
 ```bash
-npm install
+npm install vite
+npm install tailwindcss
 ```
 
 ### 3. Lancement du projet en local  
