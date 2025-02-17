@@ -11,7 +11,10 @@ Ce dépôt contient toutes mes applications **React.js** créées avec **Vite** 
 
 ## Installation et Exécution  
 
-### 1. Cloner le projet  (git clone)
+### 1. Cloner le projet 
+```bash
+git clone https://github.com/williambrooks84/R406.git
+```
 
 ### 2. Installation des dépendances  
 ```bash
