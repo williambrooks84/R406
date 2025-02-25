@@ -19,8 +19,8 @@ interface TeamProps {
 export default function Team(team: TeamProps) {
     return (
         <div className = "team">
-            <h3 className = "team__title">{team.title}</h3>
-            <h5 className = "team__description">{team.description}</h5>
+            <h3 className = "team__title text-left text-4xl font-black">{team.title}</h3>
+            <h5 className = "team__description text-left text-2xl font-normal">{team.description}</h5>
             <ul className = "team__members">
                 {team.members.map((member, index) => {
                     return (

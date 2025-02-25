@@ -5,11 +5,11 @@ interface CitationProps{
     className?: string;
 }
 
-export default function CItation(props: CitationProps){
+export default function Citation(props: CitationProps){
     if (props.children == undefined || props.children == ""){
         return null;
     }
     return (
-        <div className = {`text-sm ${props.className}`} >{props.children}</div>
+        <div className = {`text-2xl font-normal ${props.className}`} >{props.children}</div>
     )
 }

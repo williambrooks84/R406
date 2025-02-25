@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import Team from './components/Team/Team';
-import { userList } from './data/Data';
+//import { userList } from './data/Data';
 import TeamGallery from './components/TeamGallery/TeamGallery';
 
 /*
