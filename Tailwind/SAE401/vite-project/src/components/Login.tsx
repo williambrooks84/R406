@@ -1,8 +1,9 @@
-import Textbox from "../ui/Textbox";
+import FormBox from "../ui/FormBox";
 import Button from "../ui/Button";
 import Logo from "../ui/Logo";
 import logo from "../assets/logo-temp.png";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
     const [email, setEmail] = useState('');
@@ -35,28 +36,26 @@ export default function Login() {
         } else {
             setPasswordError('');
         }
-
-        if (valid) {
-            // Add login logic here
-        }
     };
+
+    const navigate = useNavigate();
 
     return (
         <div className="flex flex-col items-center justify-center p-7 gap-24">
             <Logo src={logo} alt="logo" className=""/>
             <div className="flex w-full flex-col gap-2">
-                <Textbox
+                <FormBox
                     placeholder="Email"
                     value={email}
                     onChange={handleEmailChange}
                 />
-                {emailError && <span className="text-red-500">{emailError}</span>}
-                <Textbox
+                {emailError && <span className="text-error">{emailError}</span>}
+                <FormBox
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                {passwordError && <span className="text-red-500">{passwordError}</span>}
+                {passwordError && <span className="text-error">{passwordError}</span>}
             </div>
             <Button variant="default" size="default" rounded="default" onClick={handleLoginClick}>
                 Login
@@ -65,7 +64,7 @@ export default function Login() {
                 <Button variant="greybgless" size="bgless" rounded="none">
                     Forgot Password?
                 </Button>
-                <Button variant="bluebgless" size="bgless" rounded="none">
+                <Button variant="bluebgless" size="bgless" rounded="none" onClick={() => navigate("/signup")}>
                     Don’t have an account? Sign Up
                 </Button>
             </div>
