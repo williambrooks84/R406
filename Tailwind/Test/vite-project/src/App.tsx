@@ -1,5 +1,6 @@
 import { cva } from "class-variance-authority";
 import { cn } from "./utils/cn";
+import {Arrow} from "./assets/icons";
 
 const buttonVariants = cva("rounded-md font-medium focus:outline-none", {
   variants: {
@@ -71,6 +72,8 @@ export default function App() {
       <Button variant="ghost" size="lg" rounded="default">
         Click me
       </Button>
+      <h1 className = "noel text-fg bg-bg">Hello world</h1>
+      <Arrow className=" stroke-amber-300" />
     </div>
   );
 }

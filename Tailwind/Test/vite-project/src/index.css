@@ -1,1 +1,24 @@
 @import 'tailwindcss';
+
+@theme{
+    /*Primary Tokens*/
+    --color-light: #fff;
+    --color-dark: #000;
+    --color-green: #0f0;
+    --color-red: #f00;
+    /*Semantic Tokens*/
+    --color-fg: var(--color-dark); 
+    --color-bg: var(--color-light);
+}
+
+@layer base {
+    .dark{
+        --color-bg: var(--color-dark);
+        --color-fg: var(--color-light);
+    }
+
+    .noel{
+        --color-bg: var(--color-green);
+        --color-fg: var(--color-red);
+    }
+}
